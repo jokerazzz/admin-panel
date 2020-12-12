@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/smart_tab_all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="personal__acc">
+        <div class="container">
+
+            <div id="smarttab">
+                <div class="personal__menu">
+                    <div class="user__photo">
+                        <img src="images/second-page/User.png" alt="">
+                    </div>
+                    <div class="user__name">Андрей Иванов</div>
+                    <!-- Tabs -->
+                    <ul class="nav">
+                        <li>
+                            <a class="nav-link" href="#tab-1">
+                                Мои данные
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#tab-2">
+                                Отслеживание данных
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#tab-3">
+                                Товары
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#tab-4">
+                                История
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#tab-5">
+                                Уведомления <span>2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#tab-6">
+                                Помощь
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="top__right personal__bottom" style="display: none;">
+                        <button type="button">Выйти</button>
+                        <form>
+                            <input type="checkbox" id="rus">
+                            <label for="rus">RU</label> /
+                            <input type="checkbox" id="en">
+                            <label for="en">EN</label>
+                        </form>
+
+                    </div>
+                </div>
+
+
+                <!-- Tabbed Content -->
+
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane" role="tabpanel">
+
+                        <div class="top__tab">
+                            <div class="top__left">Личный кабинет</div>
+                            <div class="top__right">
+                                <form>
+                                    <input type="checkbox" id="rus">
+                                    <label for="rus">RU</label> /
+                                    <input type="checkbox" id="en">
+                                    <label for="en">EN</label>
+                                </form>
+                                <button type="button">Выйти</button>
+                            </div>
+                        </div>
+
+                        <div class="tab__content">
+                            <div class="tab__title">Мои данные</div>
+                            <div class="user__info">
+                                <div class="user__photo">
+                                    <img src="images/second-page/User-main.png" alt="">
+                                </div>
+                                <div class="name__info">
+                                    <span>Андрей Иванов</span>
+                                    <a href="#">Сменить фото профиля</a>
+                                </div>
+                            </div>
+                            <div class="personal__info">
+                                <form action="">
+                                    <span>
+                                        <label for="">Логин</label>
+                                        <input type="text">
+                                    </span>
+                                    <span>
+                                        <label for="">Email</label>
+                                        <input type="text">
+                                    </span>
+                                </form>
+                                <form action="">
+                                    <span>
+                                        <label for="">Имя</label>
+                                        <input type="text">
+                                    </span>
+                                    <span>
+                                        <label for="">Фамилия</label>
+                                        <input type="text">
+                                    </span>
+                                </form>
+                                <form action="">
+                                    <span>
+                                        <label for="">Телефон</label>
+                                        <input type="text">
+                                    </span>
+                                    <span>
+                                        <label for="">Город</label>
+                                        <input type="text">
+                                    </span>
+                                </form>
+                                <form action="">
+                                    <span>
+                                        <label for="">Пароль</label>
+                                        <input type="text">
+                                    </span>
+                                    <span>
+                                        <label for="">Подтвердите пароль</label>
+                                        <input type="text">
+                                    </span>
+                                </form>
+                            </div>
+                            <button class="save-btn">Сохранить изменения</button>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane" role="tabpanel">
+                        <div class="top__tab">
+                            <div class="top__left">Личный кабинет</div>
+                            <div class="top__right">
+                                <form>
+                                    <input type="checkbox" id="rus">
+                                    <label for="rus">RU</label> /
+                                    <input type="checkbox" id="en">
+                                    <label for="en">EN</label>
+                                </form>
+                                <button type="button">Выйти</button>
+                            </div>
+                        </div>
+                        <div class="tab__content">
+                            <div class="tab__title">Остлеживание товара</div>
+                            <div class="order__info order__info-2" style="display: block;">
+                                <form action="">
+                                    <span>
+                                        <label for="01">Поиск по трек-номеру</label>
+                                        <input type="text" id="01" placeholder="Введите трек-номер товара">
+                                    </span>
+                                    <button class="seatch-btn" type="button"><img src="images/second-page/search.png"
+                                            alt=""></button>
+                                </form>
+                            </div>
+                            <div class="order__info-items">
+                                <div class="order__info-items--top">
+                                    <h3>Активные документы</h3>
+                                    <ul class="tabs-button " data-tabgroup="first-tab-group">
+                                        <li><a href="#tab1" class="active">Отправки</a></li>
+                                        <li><a href="#tab2">Товары</a></li>
+                                        <li><input type="checkbox" id="archive"><label for="archive">Архив</label></li>
+                                    </ul>
+                                </div>
+                                <section id="first-tab-group" class="tabgroup">
+                                    <div id="tab1">
+                                        <div class="story__item">
+                                            <div class="story__item-info story__item-info-2 story__item-info-3">
+                                                <span class="track-num">1123456789</span>
+                                                <span>Статус: Склад В</span>
+                                                <button type="button">Посмотреть документ</button>
+                                            </div>
+                                        </div>
+                                        <div class="story__item">
+                                            <div class="story__item-info story__item-info-2 story__item-info-3">
+                                                <span class="track-num">1123456789</span>
+                                                <span>Статус: Склад В</span>
+                                                <button type="button"> Посмотреть документ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tab2">
+                                        <div class="story__item">
+                                            <div class="story__item-info story__item-info-2 story__item-info-3">
+                                                <span>Принтер Xerox Phaser 3020BI</span>
+                                                <span>Статус: Склад В</span>
+                                                <span class="story-arrow story-arrow2"><img src="images/arrow-down.png"
+                                                        alt=""></span>
+                                            </div>
+                                            <div class="story__item-content">
+                                                <div class="item-content__title">Принтер Epson L132</div>
+                                                <span>Штрихкод: 4214214</span>
+                                                <span>Количество: 100 </span>
+                                                <span>Стоимость в долларах (шт.): 100$</span>
+                                                <span>Cумма долга поставщику: 500 000 ₽</span>
+                                                <span>Оплаченная сумма: 100 000 ₽</span>
+                                                <span>
+                                                    <p>Статус: Склад А</p>
+                                                    <p>Дата: 16. 06. 2020 г.</p>
+                                                </span>
+                                                <div class="story__content-btn check-document">
+                                                    <button type="button">Посмотреть документы</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="story__item">
+                                            <div class="story__item-info story__item-info-2 story__item-info-3">
+                                                <span>Принтер Xerox Phaser 3020BI</span>
+                                                <span>Статус: Склад В</span>
+                                                <span class="story-arrow story-arrow2"><img src="images/arrow-down.png"
+                                                        alt=""></span>
+                                            </div>
+                                            <div class="story__item-content">
+                                                <div class="item-content__title">Принтер Epson L132</div>
+                                                <span>Штрихкод: 4214214</span>
+                                                <span>Количество: 100 </span>
+                                                <span>Стоимость в долларах (шт.): 100$</span>
+                                                <span>Cумма долга поставщику: 500 000 ₽</span>
+                                                <span>Оплаченная сумма: 100 000 ₽</span>
+                                                <span>
+                                                    <p>Статус: Склад А</p>
+                                                    <p>Дата: 16. 06. 2020 г.</p>
+                                                </span>
+                                                <div class="story__content-btn check-document">
+                                                    <button type="button"> Посмотреть документы</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+                            <div class="order__info-3">
+                                <div class="searching-item">
+                                    <div class="searching-item__title">Информация о товаре</div>
+                                    <span>Название: Большой пакет</span>
+                                    <span>Штрихкод: 4214214</span>
+                                    <span>Количество: 100 </span>
+                                    <span>Стоимость в долларах (шт.): 100$</span>
+                                    <span>Cумма долга поставщику: 500 000 ₽</span>
+                                    <span>Оплаченная сумма: 100 000 ₽</span>
+                                </div>
+                                <div class="progress__line">
+                                    <div class="line-point">
+                                        <span class="point active"></span>
+                                        <div class="line-name">Таможня</div>
+                                        <div class="line-date">14.10.2020</div>
+                                        <div class="line-time line-time1">23:10</div>
+                                    </div>
+                                    <div class="line-point">
+                                        <span class="point active"></span>
+                                        <div class="line-name">Склад «Компании А» в КНР</div>
+                                        <div class="line-date">14.10.2020</div>
+                                        <div class="line-time line-time2">19:35</div>
+                                    </div>
+                                    <div class="line-point">
+                                        <span class="point"></span>
+                                        <div class="line-name">Сортировка</div>
+                                        <div class="line-date"></div>
+                                        <div class="line-time"></div>
+                                    </div>
+                                    <div class="line-point">
+                                        <span class="point"></span>
+                                        <div class="line-name">Склад «Компании B» в РФ</div>
+                                        <div class="line-date"></div>
+                                        <div class="line-time"></div>
+                                    </div>
+                                    <div class="line-point">
+                                        <span class="point"></span>
+                                        <div class="line-name">Реализация товара</div>
+                                        <div class="line-date"></div>
+                                        <div class="line-time"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="tab-3" class="tab-pane" role="tabpanel">
+                        <div class="top__tab">
+                            <div class="top__left">Личный кабинет</div>
+                            <div class="top__right">
+                                <form>
+                                    <input type="checkbox" id="rus">
+                                    <label for="rus">RU</label> /
+                                    <input type="checkbox" id="en">
+                                    <label for="en">EN</label>
+                                </form>
+                                <button type="button">Выйти</button>
+                            </div>
+                        </div>
+                        <div class="tab__content">
+                            <div class="tab__title">Товары</div>
+                            <div class="order__info order__info-2 tracker" style="display: block;">
+                                <form action="">
+                                    <span>
+                                        <input type="text" id="01" placeholder="Введите наименование товара">
+                                    </span>
+                                    <button class="seatch-btn" type="button"><img src="images/second-page/search.png"
+                                            alt="">
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="story__item">
+                                <div class="story__item-info story__item-info-2 story__item-info-3">
+                                    <span>Принтер Xerox Phaser 3020BI</span>
+                                    <span>Статус: Склад В</span>
+                                    <span class="story-arrow story-arrow2"><img src="images/arrow-down.png"
+                                            alt=""></span>
+                                </div>
+                                <div class="story__item-content">
+                                    <div class="item-content__title">Принтер Epson L132</div>
+                                    <span>Штрихкод: 4214214</span>
+                                    <span>Количество: 100 </span>
+                                    <span>Стоимость в долларах (шт.): 100$</span>
+                                    <span>Cумма долга поставщику: 500 000 ₽</span>
+                                    <span>Оплаченная сумма: 100 000 ₽</span>
+                                    <span>
+                                        <p>Статус: Склад А</p>
+                                        <p>Дата: 16. 06. 2020 г.</p>
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="story__item">
+                                <div class="story__item-info story__item-info-2 story__item-info-3">
+                                    <span>Принтер Xerox Phaser 3020BI</span>
+                                    <span>Статус: Таможня</span>
+                                    <span class="story-arrow story-arrow2"><img src="images/arrow-down.png"
+                                            alt=""></span>
+                                </div>
+                                <div class="story__item-content">
+                                    <div class="item-content__title">Принтер Epson L132</div>
+                                    <span>Штрихкод: 4214214</span>
+                                    <span>Количество: 100 </span>
+                                    <span>Стоимость в долларах (шт.): 100$</span>
+                                    <span>Cумма долга поставщику: 500 000 ₽</span>
+                                    <span>Оплаченная сумма: 100 000 ₽</span>
+                                    <span>
+                                        <p>Статус: Склад А</p>
+                                        <p>Дата: 16. 06. 2020 г.</p>
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="story__item">
+                                <div class="story__item-info story__item-info-2 story__item-info-3">
+                                    <span>Принтер Xerox Phaser 3020BI</span>
+                                    <span>Статус: Склад А</span>
+                                    <span class="story-arrow story-arrow2"><img src="images/arrow-down.png"
+                                            alt=""></span>
+                                </div>
+                                <div class="story__item-content">
+                                    <div class="item-content__title">Принтер Epson L132</div>
+                                    <span>Штрихкод: 4214214</span>
+                                    <span>Количество: 100 </span>
+                                    <span>Стоимость в долларах (шт.): 100$</span>
+                                    <span>Cумма долга поставщику: 500 000 ₽</span>
+                                    <span>Оплаченная сумма: 100 000 ₽</span>
+                                    <span>
+                                        <p>Статус: Склад А</p>
+                                        <p>Дата: 16. 06. 2020 г.</p>
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="story__item">
+                                <div class="story__item-info story__item-info-2 story__item-info-3">
+                                    <span>Принтер Xerox Phaser 3020BI</span>
+                                    <span>Статус: Таможня</span>
+                                    <span class="story-arrow story-arrow2"><img src="images/arrow-down.png"
+                                            alt=""></span>
+                                </div>
+                                <div class="story__item-content">
+                                    <div class="item-content__title">Принтер Epson L132</div>
+                                    <span>Штрихкод: 4214214</span>
+                                    <span>Количество: 100 </span>
+                                    <span>Стоимость в долларах (шт.): 100$</span>
+                                    <span>Cумма долга поставщику: 500 000 ₽</span>
+                                    <span>Оплаченная сумма: 100 000 ₽</span>
+                                    <span>
+                                        <p>Статус: Склад А</p>
+                                        <p>Дата: 16. 06. 2020 г.</p>
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-4" class="tab-pane" role="tabpanel">
+                        <div class="top__tab">
+                            <div class="top__left">Личный кабинет</div>
+                            <div class="top__right">
+                                <form>
+                                    <input type="checkbox" id="rus">
+                                    <label for="rus">RU</label> /
+                                    <input type="checkbox" id="en">
+                                    <label for="en">EN</label>
+                                </form>
+                                <button type="button">Выйти</button>
+                            </div>
+                        </div>
+                        <div class="tab__content">
+                            <div class="order__block2" id="order__block2">
+                                <div class="tab__title">История</div>
+                                <div class="order__info order__info-2 tracker" style="display: block;">
+                                    <form action="">
+                                        <span>
+                                            <input type="text" id="01" placeholder="Введите наименование товара">
+                                        </span>
+                                        <button class="seatch-btn" type="button"><img
+                                                src="images/second-page/search.png" alt="">
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="story__item">
+                                    <div class="story__item-info">
+                                        <span>Дата: 14. 09. 2020 г.</span>
+                                        <span>Принтер Xerox Phaser 3020BI</span>
+                                        <span>Статус: Склад В</span>
+                                        <span class="story-arrow"><img src="images/arrow-down.png" alt=""></span>
+                                    </div>
+                                    <div class="story__item-content">
+                                        <div class="item-content__title">Принтер Epson L132</div>
+                                        <span>Штрихкод: 4214214</span>
+                                        <span>Количество: 100 </span>
+                                        <span>Стоимость в долларах (шт.): 100$</span>
+                                        <span>Cумма долга поставщику: 500 000 ₽</span>
+                                        <span>Оплаченная сумма: 100 000 ₽</span>
+                                        <span>
+                                            <p>Статус: Склад А</p>
+                                            <p>Дата: 16. 06. 2020 г.</p>
+                                        </span>
+                                        <div class="story__content-btn">
+                                            <button type="button">Посмотреть документы</button>
+                                            <button type="button">Скачать документы</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="story__item">
+                                    <div class="story__item-info">
+                                        <span>Дата: 14. 09. 2020 г.</span>
+                                        <span>Принтер Xerox Phaser 3020BI</span>
+                                        <span>Статус: Склад В</span>
+                                        <span class="story-arrow"><img src="images/arrow-down.png" alt=""></span>
+                                    </div>
+                                    <div class="story__item-content">
+                                        <div class="item-content__title">Принтер Epson L132</div>
+                                        <span>Штрихкод: 4214214</span>
+                                        <span>Количество: 100 </span>
+                                        <span>Стоимость в долларах (шт.): 100$</span>
+                                        <span>Cумма долга поставщику: 500 000 ₽</span>
+                                        <span>Оплаченная сумма: 100 000 ₽</span>
+                                        <span>
+                                            <p>Статус: Склад А</p>
+                                            <p>Дата: 16. 06. 2020 г.</p>
+                                        </span>
+                                        <div class="story__content-btn">
+                                            <button type="button">Посмотреть документы</button>
+                                            <button type="button">Скачать документы</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="story__item">
+                                    <div class="story__item-info">
+                                        <span>Дата: 14. 09. 2020 г.</span>
+                                        <span>Принтер Xerox Phaser 3020BI</span>
+                                        <span>Статус: Склад В</span>
+                                        <span class="story-arrow"><img src="images/arrow-down.png" alt=""></span>
+                                    </div>
+                                    <div class="story__item-content">
+                                        <div class="item-content__title">Принтер Epson L132</div>
+                                        <span>Штрихкод: 4214214</span>
+                                        <span>Количество: 100 </span>
+                                        <span>Стоимость в долларах (шт.): 100$</span>
+                                        <span>Cумма долга поставщику: 500 000 ₽</span>
+                                        <span>Оплаченная сумма: 100 000 ₽</span>
+                                        <span>
+                                            <p>Статус: Склад А</p>
+                                            <p>Дата: 16. 06. 2020 г.</p>
+                                        </span>
+                                        <div class="story__content-btn">
+                                            <button type="button">Посмотреть документы</button>
+                                            <button type="button">Скачать документы</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="story__item">
+                                    <div class="story__item-info">
+                                        <span>Дата: 14. 09. 2020 г.</span>
+                                        <span>Принтер Xerox Phaser 3020BI</span>
+                                        <span>Статус: Склад В</span>
+                                        <span class="story-arrow"><img src="images/arrow-down.png" alt=""></span>
+                                    </div>
+                                    <div class="story__item-content">
+                                        <div class="item-content__title">Принтер Epson L132</div>
+                                        <span>Штрихкод: 4214214</span>
+                                        <span>Количество: 100 </span>
+                                        <span>Стоимость в долларах (шт.): 100$</span>
+                                        <span>Cумма долга поставщику: 500 000 ₽</span>
+                                        <span>Оплаченная сумма: 100 000 ₽</span>
+                                        <span>
+                                            <p>Статус: Склад А</p>
+                                            <p>Дата: 16. 06. 2020 г.</p>
+                                        </span>
+                                        <div class="story__content-btn">
+                                            <button type="button">Посмотреть документы</button>
+                                            <button type="button">Скачать документы</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order__block" id="order__block">
+                                <div class="tab__title">Заказ</div>
+                                <div class="order-date">
+                                    Заказ № 2014 от 01. 01. 2020 г.
+                                </div>
+                                <form class="order-form">
+                                    <span>
+                                        <label for="">Название компании</label>
+                                        <input type="text">
+                                    </span>
+                                    <span>
+                                        <label for="">ИНН</label>
+                                        <input type="text">
+                                    </span>
+                                    <div class="order-from__name">Автор: Иван Иванов</div>
+                                </form>
+                                <div class="order__info">
+                                    <form action="">
+                                        <p>
+                                            <span>
+                                                <label for="01">Наименование товара</label>
+                                                <input type="text" id="01">
+                                            </span>
+                                            <span>
+                                                <label for="02">Артикул</label>
+                                                <input class="article" type="text" id="02">
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <span>
+                                                <label for="03">Кол-во</label>
+                                                <input class="num" type="text" id="03">
+                                            </span>
+                                            <span>
+                                                <label for="04">Комментарий</label>
+                                                <input type="text" id="04">
+                                            </span>
+                                        </p>
+
+
+                                    </form>
+                                    <form action="">
+                                        <p>
+                                            <span>
+                                                <label for="01">Наименование товара</label>
+                                                <input type="text" id="01">
+                                            </span>
+                                            <span>
+                                                <label for="02">Артикул</label>
+                                                <input class="article" type="text" id="02">
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <span>
+                                                <label for="03">Кол-во</label>
+                                                <input class="num" type="text" id="03">
+                                            </span>
+                                            <span>
+                                                <label for="04">Комментарий</label>
+                                                <input type="text" id="04">
+                                            </span>
+                                        </p>
+
+                                    </form>
+                                </div>
+                                <button class="btn btn-left">Invoice PDF</button>
+                                <button class="btn">Сохранить и отправить</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="tab-5" class="tab-pane" role="tabpanel">
+                        <div class="top__tab">
+                            <div class="top__left">Личный кабинет</div>
+                            <div class="top__right">
+                                <form>
+                                    <input type="checkbox" id="rus">
+                                    <label for="rus">RU</label> /
+                                    <input type="checkbox" id="en">
+                                    <label for="en">EN</label>
+                                </form>
+                                <button type="button">Выйти</button>
+                            </div>
+                        </div>
+                        <div class="tab__content">
+                            <div class="tab__title">Уведомления.</div>
+
+                            <div class="notice__item">
+                                <div class="notice__item-top">
+                                    <div class="notice__item-img">
+                                        <img src="images/notice-photo.png" alt="">
+                                    </div>
+                                    <div class="notice__item-name">
+                                        <span>Компания В</span>
+                                        <p>2 июл в 20:30</p>
+                                    </div>
+                                </div>
+                                <div class="notice__item-text">
+                                    Товар успешно отправлен на склад компании “А”
+                                </div>
+                            </div>
+                            <div class="notice__item">
+                                <div class="notice__item-top">
+                                    <div class="notice__item-img">
+                                        <img src="images/notice-photo.png" alt="">
+                                    </div>
+                                    <div class="notice__item-name">
+                                        <span>Компания В</span>
+                                        <p>2 июл в 20:30</p>
+                                    </div>
+                                </div>
+                                <div class="notice__item-text">
+                                    Товар успешно отправлен на склад компании “А”
+                                </div>
+                            </div>
+                            <div class="notice__item">
+                                <div class="notice__item-top">
+                                    <div class="notice__item-img">
+                                        <img src="images/notice-photo.png" alt="">
+                                    </div>
+                                    <div class="notice__item-name">
+                                        <span>Компания В</span>
+                                        <p>2 июл в 20:30</p>
+                                    </div>
+                                </div>
+                                <div class="notice__item-text">
+                                    Товар успешно отправлен на склад компании “А”
+                                </div>
+                            </div>
+                            <div class="notice__item">
+                                <div class="notice__item-top">
+                                    <div class="notice__item-img">
+                                        <img src="images/notice-photo.png" alt="">
+                                    </div>
+                                    <div class="notice__item-name">
+                                        <span>Компания В</span>
+                                        <p>2 июл в 20:30</p>
+                                    </div>
+                                </div>
+                                <div class="notice__item-text">
+                                    Товар успешно отправлен на склад компании “А”
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="tab-6" class="tab-pane" role="tabpanel">
+                        <div class="top__tab">
+                            <div class="top__left">Личный кабинет</div>
+                            <div class="top__right">
+                                <form>
+                                    <input type="checkbox" id="rus">
+                                    <label for="rus">RU</label> /
+                                    <input type="checkbox" id="en">
+                                    <label for="en">EN</label>
+                                </form>
+                                <button type="button">Выйти</button>
+                            </div>
+                        </div>
+                        <div class="tab__content">
+                            <div class="tab__title">Помощь F. A. Q.</div>
+
+                            <div class="help__item">
+                                <div class="help__item-one">
+                                    Куда я могу обратиться с вопросом на транспортно-логистические услуги?
+                                </div>
+                                <div class="help__item-two">
+                                    Ваш запрос вы можете направить в любой офис компании Next, позвонив или направив
+                                    электронное сообщение, а также оформив запрос на сайте.
+                                </div>
+                            </div>
+                            <div class="help__item">
+                                <div class="help__item-one">
+                                    Куда я могу обратиться с вопросом на транспортно-логистические услуги?
+                                </div>
+                                <div class="help__item-two">
+                                    Ваш запрос вы можете направить в любой офис компании Next, позвонив или направив
+                                    электронное сообщение, а также оформив запрос на сайте.
+                                </div>
+                            </div>
+                            <div class="help__item">
+                                <div class="help__item-one">
+                                    Куда я могу обратиться с вопросом на транспортно-логистические услуги?
+                                </div>
+                                <div class="help__item-two">
+                                    Ваш запрос вы можете направить в любой офис компании Next, позвонив или направив
+                                    электронное сообщение, а также оформив запрос на сайте.
+                                </div>
+                            </div>
+
+                            <div class="Feedback">
+                                <div class="Feedback__title">Обратная связь</div>
+                                <span>Мы будем рады вашему вопросу или сообщению</span>
+                                <form action="">
+                                    <input type="text" placeholder="Имя">
+                                    <input type="text" placeholder="Телефон">
+                                    <input type="text" placeholder="E-mail">
+                                    <input type="text" placeholder="Ваш вопрос">
+                                    <button type="button">Отправить</button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/jquery.smartTab.js"></script>
+    <script src="js/buttonTabs.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
