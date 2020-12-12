@@ -89,6 +89,33 @@ $('.nav li a').on('click', function() {
 });
 
 $('.check-document button').on('click', function(){
-  $('.order__info-3').toggleClass('active');
-  
+  $('.order__info-3').addClass('active');
+  $('.order__info-2').addClass('active');
+  $('.order__info-items').addClass('active');
+  $('.arr-left').addClass('active')
+})
+
+$('.arr-left').on('click', function(){
+  $('.order__info-3').removeClass('active');
+  $('.order__info-2').removeClass('active');
+  $('.order__info-items').removeClass('active');
+  $('.arr-left').removeClass('active')
+})
+
+$('.show-doc').on('click', function() {
+  $('.order__block--popup').addClass('active');
+  $('.overlay').addClass('active');
+  console.log('click')
+})
+
+
+
+$('.overlay').on('click', function() {
+  $('.order__block--popup').removeClass('active');
+  $('.overlay').removeClass('active');
+})
+
+$('.personal__menu').on('click', function() {
+  $('.order__block--popup').removeClass('active');
+  $('.overlay').removeClass('active');
 })

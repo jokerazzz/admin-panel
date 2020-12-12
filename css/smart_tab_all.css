@@ -23,6 +23,7 @@
 .st > .tab-content {
     position: relative;
     height: 100vh;
+    border: 1px solid #eee;
 }
 
 .st > .nav {
@@ -149,9 +150,9 @@
 }
 
 /* SmartTab Theme: Default */
-.st-theme-default {
+/* .st-theme-default {
     border: 1px solid #eee;
-}
+} */
 
 .st-theme-default > .tab-content > .tab-pane {
     padding: 0;

@@ -248,14 +248,21 @@
                                         <div class="story__item-info story__item-info-2 story__item-info-3">
                                             <span class="track-num">1123456789</span>
                                             <span>Статус: Склад В</span>
-                                            <button type="button">Посмотреть документ</button>
+                                            <button type="button" class="show-doc">Посмотреть документ</button>
                                         </div>
                                     </div>
                                     <div class="story__item">
                                         <div class="story__item-info story__item-info-2 story__item-info-3">
                                             <span class="track-num">1123456789</span>
                                             <span>Статус: Склад В</span>
-                                            <button type="button">Посмотреть документ</button>
+                                            <button type="button" class="show-doc">Посмотреть документ</button>
+                                        </div>
+                                    </div>
+                                    <div class="story__item">
+                                        <div class="story__item-info story__item-info-2 story__item-info-3">
+                                            <span class="track-num">1123456789</span>
+                                            <span>Статус: Склад В</span>
+                                            <button type="button" class="show-doc">Посмотреть документ</button>
                                         </div>
                                     </div>
                                 </div>
@@ -304,9 +311,82 @@
                                     </div>
                                 </div>
                             </section> 
-                            
+
+
+                            <div class="order__block--popup">
+                                <div class="tab__title">Заказ</div>
+                                <div class="order-date">
+                                    Заказ № 2014 от 01. 01. 2020 г.
+                                </div>
+                                <form class="order-form">
+                                    <span>
+                                        <label for="">Название компании</label>
+                                        <input type="text">
+                                    </span>
+                                    <span>
+                                        <label for="">ИНН</label>
+                                        <input type="text">
+                                    </span>
+                                    <div class="order-from__name">Автор: Иван Иванов</div>
+                                </form>
+                                <div class="order__info">
+                                    <form action="">
+                                        <p>
+                                            <span>
+                                                <label for="01">Наименование товара</label>
+                                                <input type="text" id="01">
+                                            </span>
+                                            <span>
+                                                <label for="02">Артикул</label>
+                                                <input class="article" type="text" id="02">
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <span>
+                                                <label for="03">Кол-во</label>
+                                                <input class="num" type="text" id="03">
+                                            </span>
+                                            <span>
+                                                <label for="04">Комментарий</label>
+                                                <input type="text" id="04">
+                                            </span>
+                                        </p>
+
+
+                                    </form>
+                                    <form action="">
+                                        <p>
+                                            <span>
+                                                <label for="01">Наименование товара</label>
+                                                <input type="text" id="01">
+                                            </span>
+                                            <span>
+                                                <label for="02">Артикул</label>
+                                                <input class="article" type="text" id="02">
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <span>
+                                                <label for="03">Кол-во</label>
+                                                <input class="num" type="text" id="03">
+                                            </span>
+                                            <span>
+                                                <label for="04">Комментарий</label>
+                                                <input type="text" id="04">
+                                            </span>
+                                        </p>
+
+                                    </form>
+                                </div>
+                                <div class="modal-btn">
+                                    <button class="btn btn-left">Invoice PDF</button>
+                                    <button class="btn">Сохранить и отправить</button>
+                                </div>
+
+                            </div>
                             
                         </div>
+                        <div class="overlay"></div>
                     </div>
                     <div id="tab-4" class="tab-pane" role="tabpanel">
                         <div class="top__tab">
