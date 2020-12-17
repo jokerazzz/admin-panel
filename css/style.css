@@ -116,7 +116,7 @@ body {
 .top__tab {
     box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
-    padding: 29px 50px 29px 63px;
+    padding: 29px 50px 29px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -197,6 +197,7 @@ body {
 .user__info {
     display: flex;
     align-items: center;
+    margin-top: 30px;
 }
 
 .user__info .user__photo {
@@ -268,7 +269,7 @@ body {
     outline: none;
     position: absolute;
     bottom: -20px;
-    right: 133px;
+    right: 50px;
 }
 
 .order-date {
@@ -326,6 +327,7 @@ body {
     justify-content: space-between;
     max-width: 420px;
     width: 100%;
+    align-items: center;
 }
 
 .order__info form p + p {
@@ -386,14 +388,19 @@ body {
     outline: none;
     position: absolute;
     bottom: -25%;
-    right: 0;
+    right: 50px;
     max-width: 249px;
     width: 100%;
     height: 60px;
 }
 
 .btn-left{
-    right: 300px;
+    right: 320px;
+}
+
+.btn__bottom {
+    display: flex;
+
 }
 
 .story__item {
@@ -410,6 +417,7 @@ body {
     position: relative;
     align-items: flex-start;
     align-items: center;
+    cursor: pointer;
 }
 
 .story-status {
@@ -517,7 +525,10 @@ body {
     font-size: 20px;
     color: #414141;
     margin-bottom: 30px;
+    margin-top: 38px;
 }
+
+
 
 .notice__top-left span {
     padding-left: 36px;
@@ -576,6 +587,10 @@ body {
     width: 100%;
     padding: 30px;
     margin-bottom: 30px;
+}
+
+.notice__item:nth-child(2) {
+    margin-top: 40px;
 }
 
 .notice__item-top {
@@ -777,6 +792,7 @@ body {
     max-width: 555px;
     width: 100%;
     margin-bottom: 56px;
+    position: relative;
 }
 
 .searching-item__title {
@@ -1088,7 +1104,7 @@ display: none;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .order__info-items--top h3 {
@@ -1106,6 +1122,7 @@ display: none;
     display: flex;
     color: #414141;
     align-items: center;
+    margin-top: 15px;
 }
 
 
@@ -1138,6 +1155,15 @@ display: none;
 }
 
 #archive:checked ~ label {
+    background-color: #505598;
+    color: #fff;
+}
+
+#archive2 {
+    display: none;
+}
+
+#archive2:checked ~ label {
     background-color: #505598;
     color: #fff;
 }
@@ -1212,26 +1238,76 @@ display: none;
     display: block;
 }
 
+.order__info-items {
+    margin-top: 40px;
+}
 .order__info-2.active,
 .order__info-items.active {
     display: none;
 }
 
-.arr-left {
-    display: none;
-    margin-right: 10px;
+.arr-close {
+    /* display: none; */
+    position: absolute;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 60;
 }
 
-.arr-left.active {
+.arr-close span{
+    display: inline-block;
+    position: relative;
+    
+}
+
+.arr-close span::before{
+    content: '';
+    height: 3px;
+    width: 30px;
+    background-color: #000;
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.arr-close span::after{
+    content: '';
+    height: 3px;
+    width: 30px;
+    background-color: #000;
+    transform: rotate(-45deg);
+    position: absolute;
+}
+
+.arr-close.active {
     display: inline-block;
 }
 
+.order__block--popup .tab__title::before {
+    display: none;
+}
+.order__block--popup .tab__title {
+    padding-left: 0;
+}
+
+.top__block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.top__block .tracker {
+    max-width: 400px;
+    width: 100%;
+}
 
 
-
-
-
-
+.top__block .tracker span {
+    width: 100%;
+}
 
 @media (max-width: 1315px) {
     .point::after {
@@ -1267,6 +1343,9 @@ display: none;
     .story__item .story__item-info .story-arrow2 {
         display: block !important;
     }
+    .order__info form p span {
+        align-self: flex-end;
+    }
 }
 
 
@@ -1277,6 +1356,10 @@ display: none;
     .order__info form span input {
         margin-bottom: 20px;
     }
+    .top__block .order__info form span input,
+    .top__block .seatch-btn {
+        margin-bottom: 0;
+    }
     .num {
         width: 160px !important;
     }
@@ -1285,6 +1368,8 @@ display: none;
     }
     .order__info button {
         align-self: center;
+        margin-left: 10px;
+        margin-top: 8px;
     }
     .btn {
         bottom: -6%;
@@ -1304,6 +1389,9 @@ display: none;
 
     .order__info-2 form {
         flex-wrap: nowrap;
+    }
+    .order__info form p + p {
+        margin-left: 0;
     }
 }
 
@@ -1340,7 +1428,12 @@ display: none;
     .story__item-content span {
         font-size: 14px;
     }
-    
+    .order__block--popup.active .order-from__name {
+        align-self: flex-end;
+        position: absolute;
+        top: 27%;
+        right: 8%;
+    }
 }
 
 @media (max-width: 1052px) {
@@ -1450,6 +1543,15 @@ display: none;
         right: auto;
         bottom: 0;
     }
+    .order-form span {
+        align-self: flex-end;
+    }
+    .story__content-btn {
+        position: unset;
+    }
+    .story__content-btn button {
+        max-width: 250px;
+    }
 }
 
 @media (max-width: 920px) {
@@ -1510,7 +1612,7 @@ display: none;
         height: 50px;
     }
     .btn-left {
-        right: 230px;
+        right: 280px;
     }
     .seatch-btn {
         height: 50px;
@@ -1531,7 +1633,7 @@ display: none;
         width: 65%;
     }
     .save-btn {
-        right: 100px;
+        right: 33%;
     }
     .order-form {
         flex-direction: column;
@@ -1587,6 +1689,17 @@ display: none;
     .personal__bottom form {
         color: #fff;
     }
+    .order__block--popup {
+        left: 10px;
+    }
+    .order-form span {
+        align-self: start;
+    }
+    .order__block--popup.active .order-from__name {
+        top: 31%;
+        right: auto;
+        left: 8%;
+    }
 }
 
 @media (max-width: 715px) {
@@ -1634,11 +1747,32 @@ display: none;
     .order__info-2 form span input::placeholder {
         font-size: 16px;
     }
+    .modal-btn .btn {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+    .modal-btn {
+        margin-top: 120px;
+    }
+    .order__block--popup.active .order-from__name {
+        top: 33%;
+    }
 }
 
 @media (max-width: 560px) {
     .personal__menu {
         height: 140vh;
+    }
+    
+    
+}
+
+@media (max-width: 525px){
+    .order__info form p span {
+        align-self: flex-end;
+    }
+    .order__block--popup.active .order-from__name {
+        top: 32%;
     }
 }
 
@@ -1699,19 +1833,67 @@ display: none;
     .personal__menu {
         height: 125vh;
     }
+    .order__info form p span {
+        align-self: flex-end;
+    }
+    .order__block--popup {
+        padding: 20px;
+        left: 0;
+    }
+    .btn__bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .btn__bottom .btn {
+        max-width: 250px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    .tabs-button li a {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+    .tabs-button li:nth-child(3) label {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+    .story__item-info-3 button {
+        font-size: 14px;
+    }
+    .order__info form span input {
+        font-size: 16px;
+        height: 40px;
+    }
+    .order__info form span label {
+        font-size: 16px;
+    }
+    .seatch-btn {
+        height: 40px !important;
+    }
+    .personal__bottom {
+        bottom: 10%;
+    }
+    .order__info button {
+        margin-top: 0;
+    }
 }
 
 
 @media (max-width: 415px) {
     .tab__content {
-        padding: 47px 20px;
+        padding: 47px 10px;
     }
     .tab__title {
         margin-bottom: 20px;
-        font-size: 28px;
+        font-size: 25px;
     }
     .name__info {
-        font-size: 18px;
+        font-size: 16px;
     }
     .personal__info form span {
         margin-bottom: 20px;
@@ -1779,6 +1961,12 @@ display: none;
     }
     .personal__menu {
         height: 117vh;
+    }
+    .modal-btn .btn {
+        font-size: 14px;
+    }
+    .personal__bottom {
+        bottom: 5%;
     }
 }
 
